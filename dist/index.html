@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link href="./output.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+        .container {
+            @apply max-w-5
+        }
+    </style>
 
 </head>
 <body>
@@ -20,11 +25,22 @@
                 <a class="hover:text-red-500" href="">Comunity</a>
             </div>
             <button class="md:inline hidden bg-red-500 px-4 py-2 rounded-3xl text-white">Create Account</button>
-            <img src="../img/icon-hamburger.svg" class="md:hidden" >
+            <img src="../img/icon-hamburger.svg" class="hamburger md:hidden" >
         </div>
+        <!-- mobile menu -->
+         <div class="md:hidden">
+             <div class="menu absolute container inset-x-0 mx-auto px-6 py-5 hidden  flex-col shadow-md top-16 bg-white">
+                 <a class="hover:text-red-500" href="">Pricing</a>
+                 <a class="hover:text-red-500" href="">Product</a>
+                 <a class="hover:text-red-500" href="">About Us</a>
+                 <a class="hover:text-red-500" href="">Carrier</a>
+                 <a class="hover:text-red-500" href="">Comunity</a>
+                 <a class="hover:text-red-500" href="">Create Account</a>
+             </div>
+         </div>
     </nav>
     <!-- hero Section -->
-     <section class="container md:flex md:justify-between my-36 px-6 mx-auto items-center space-x-6">
+     <section class="container md:flex md:justify-between my-32 px-6 mx-auto items-center space-x-6">
          <div class="md:w-3/6 text-center md:text-left ">
              <h4 class="font-bold text-xl ">New Feature</h4>
              <h3 class="font-bold text-5xl mb-5">Coming Up With Freash Ideas</h3>
@@ -147,5 +163,6 @@
             </ul>
         </div>
     </section>
+    <script src="./main.js"></script>
 </body>
 </html>
