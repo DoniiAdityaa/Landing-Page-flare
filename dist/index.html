@@ -10,31 +10,32 @@
 <body>
     <!-- Navbar -->
     <nav>
-        <div class="flex mx-auto container items-center py-5  justify-between">
+        <div class="flex px-5 mx-auto container items-center py-5  justify-between">
             <a href=" " class="w-32"><img src="../img/logo.png" /> </a>
-            <div class="space-x-6 font-semibold">
+            <div class="md:inline hidden space-x-6 font-semibold">
                 <a class="hover:text-red-500" href="">Pricing</a>
                 <a class="hover:text-red-500" href="">Product</a>
                 <a class="hover:text-red-500" href="">About Us</a>
                 <a class="hover:text-red-500" href="">Carrier</a>
                 <a class="hover:text-red-500" href="">Comunity</a>
             </div>
-            <button class="bg-red-500 px-4 py-2 rounded-3xl text-white">Create Account</button>
+            <button class="md:inline hidden bg-red-500 px-4 py-2 rounded-3xl text-white">Create Account</button>
+            <img src="../img/icon-hamburger.svg" class="md:hidden" >
         </div>
     </nav>
     <!-- hero Section -->
-     <section class="container flex justify-between my-36 px-6 mx-auto items-center space-x-6">
-         <div class="w-3/6  ">
+     <section class="container md:flex md:justify-between my-36 px-6 mx-auto items-center space-x-6">
+         <div class="md:w-3/6 text-center md:text-left ">
              <h4 class="font-bold text-xl ">New Feature</h4>
              <h3 class="font-bold text-5xl mb-5">Coming Up With Freash Ideas</h3>
              <p class="mb-5 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt neque molestiae nobis natus aspernatur dolores?</p>
              <button class="bg-red-500 px-4 py-2 rounded-3xl text-white">Create Account</button>
          </div>
-         <img class="w-3/6 " src="../img/hero.jpg" alt="">
+         <img class="md:w-2/3" src="../img/hero.jpg" alt="">
      </section>
      <!-- Partners Section -->
       <section class="bg-gray-100 p-10 my-52 ">
-        <div class="container flex justify-around items-center mx-auto max-w-5xl">
+        <div class="container grid grid-cols-2 gap-5 md:flex md:justify-around items-center justify-items-center mx-auto max-w-5xl">
              <img class="w-32" src="../img/bootstrap.png" alt="">
             <img class="w-32" src="../img/dribbble.png" alt="">
             <img class="w-32" src="../img/envato.png" alt="">
@@ -43,9 +44,9 @@
         </div>
       </section>
       <!-- statisitcs Section -->
-       <section class="container -my-20 mx-auto  space-x-6 flex justify-between items-center">
-        <img src="../img/stat.jpg" class="w-3/6" alt="">
-        <div class="w-3/6">
+       <section class="container  mx-auto  space-x-6 md:flex md:justify-between items-center">
+        <img src="../img/stat.jpg" class="w-2/4 md:w-3/6 mx-auto" alt="">
+        <div class="md:h-3/6 text-center md:text-left ">
              <h4 class="font-bold text-xl">Statistics</h4>
              <h3 class="font-bold text-3xl mb-5">What We Do For You</h3> 
              <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorum ad velit amet a, consequatur exercitationem accusantium doloremque perferendis quia?</p>
@@ -76,23 +77,23 @@
         <h3 class="text-3xl font-bold mb-5">What They Say About Us</h3>
     
         <!-- Container untuk semua person -->
-        <div class="flex justify-between mt-16 space-x-8">
+        <div class="md:flex md:justify-between mt-16 space-x-8">
             <!-- Person 1 -->
-            <div class="bg-gray-100 border border-gray-200 rounded-md w-1/3 p-10">
+            <div class="bg-gray-100 border border-gray-200 rounded-md md:w-1/3 p-10">
                 <img class="w-16 h-16 rounded-full mx-auto -mt-12" src="../img/person1.jpg" alt="Person 1" />
                 <h5 class="font-bold pt-5">Bang Saleh</h5>
                 <p class="text-gray-500 mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, impedit.</p>
             </div>
     
             <!-- Person 2 -->
-            <div class="bg-gray-100 border border-gray-200 rounded-md w-1/3 p-6">
+            <div class="hidden md:inline  bg-gray-100 border border-gray-200 rounded-md w-1/3 p-6">
                 <img class="w-16 h-16 rounded-full mx-auto -mt-12" src="../img/person2.jpg" alt="Person 2" />
                 <h5 class="font-bold pt-5">Bang John</h5>
                 <p class="text-gray-500 mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, impedit.</p>
             </div>
     
             <!-- Person 3 -->
-            <div class="bg-gray-100 border border-gray-200 rounded-md w-1/3 p-6">
+            <div class="hidden md:inline bg-gray-100 border border-gray-200 rounded-md w-1/3 p-6">
                 <img class="w-16 h-16 rounded-full mx-auto -mt-12" src="../img/person3.jpg" alt="Person 3" />
                 <h5 class="font-bold pt-5">Bang Wick</h5>
                 <p class="text-gray-500 mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, impedit.</p>
@@ -101,8 +102,7 @@
         <button class="bg-red-500 px-4 py-2 rounded-3xl text-white mt-11">See All Testimonies</button>
     </section>
     <!-- footer -->
-    <section class="container mx-auto px-6 flex justify-between bg-top bg-no-repeat pb-10 text-gray-500" style="background-image: url(../img/footer.png) ">
-        <div class="">
+<section class="container mx-auto px-6  sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:flex justify-between gap-4 bg-top bg-no-repeat pb-10 text-gray-500" style="background-image: url(../img/footer.png)">        <div class="mb-5">
             <img src="../img/logo.png" class="w-32" />
             <p class="">doniaditya004@gmail.com </p>
             <div class="flex items-center">
@@ -110,7 +110,7 @@
             <p class="">DoniiAdityaa</p>
             </div>
         </div>
-        <div>
+        <div class="mb-5">
             <h4 class="font-bold text-black text-xl mb-5">About Us</h4>
             <ul class="space-y-2">
                 <li><a href="">Support Center</a></li>
@@ -119,7 +119,7 @@
                 <li><a href="">History</a></li>
             </ul>
         </div>
-        <div>
+        <div class="mb-5">
             <h4 class="font-bold text-black text-xl mb-5">Resources</h4>
             <ul class="space-y-2">
                 <li><a href="">Support Center</a></li>
@@ -128,7 +128,7 @@
                 <li><a href="">History</a></li>
             </ul>
         </div>
-        <div>
+        <div class="mb-5">
             <h4 class="font-bold text-black text-xl mb-5">Company</h4>
             <ul class="space-y-2">
                 <li><a href="">Support Center</a></li>
@@ -137,7 +137,7 @@
                 <li><a href="">History</a></li>
             </ul>
         </div>
-        <div>
+        <div class="mb-5">
             <h4 class="font-bold text-black text-xl mb-5">Privacy Policy</h4>
             <ul class="space-y-2">
                 <li><a href="">Support Center</a></li>
